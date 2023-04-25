@@ -1,0 +1,42 @@
+version: '3.8'
+
+networks:
+  default:
+    name: tb_book_default
+
+services:
+  tb_book_be:
+    build: .
+    command: 'yarn run start'
+    ports:
+      - '3000:3000'
+    env_file: .env
+    volumes:
+      - ./src:/app/src
+      - nodemodules:/app/node_modules
+    links:
+      - tb_book_mongo
+    depends_on:
+      - tb_book_mongo
+    logging:
+      options:
+        max-size: 10m
+        max-file: "3"
+    restart: always
+  
+  tb_book_mongo:
+    image: mongo:bionic
+    container_name: tb_book_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./mongoDB:/data/db
+      - ./docker/docker-entrypoint-initdb.d/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+
+volumes:
+  mongo_data:
+  nodemodules:
+

@@ -1,0 +1,42 @@
+Arguments: 
+  /home/lucascmendes/.nvm/versions/node/v16.18.0/bin/node /home/lucascmendes/.yarn/bin/yarn.js add XMLHttpRequest
+
+PATH: 
+  /home/lucascmendes/.local/share/pnpm:/home/lucascmendes/.yarn/bin:/home/lucascmendes/.config/yarn/global/node_modules/.bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.npm-global/bin:/home/lucascmendes/.local/share/pnpm:/home/lucascmendes/.yarn/bin:/home/lucascmendes/.config/yarn/global/node_modules/.bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.composer/vendor/bin:/home/lucascmendes/.npm-global/bin:/home/lucascmendes/.nvm/versions/node/v16.18.0/bin:/home/lucascmendes/.zinit/polaris/bin:/home/lucascmendes/.local/bin:/home/lucascmendes/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/sonar-scanner/bin:/home/lucascmendes/Android/Sdk/emulator:/home/lucascmendes/Android/Sdk/tools:/home/lucascmendes/Android/Sdk/tools/bin:/home/lucascmendes/Android/Sdk/platform-tools:/home/lucascmendes/android-studio/bin:/home/lucascmendes/Android/Sdk/emulator:/home/lucascmendes/Android/Sdk/tools:/home/lucascmendes/Android/Sdk/tools/bin:/home/lucascmendes/Android/Sdk/platform-tools:/home/lucascmendes/android-studio/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.18.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/XMLHttpRequest: Not found
+      at Request.params.callback [as _callback] (/home/lucascmendes/.yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/home/lucascmendes/.yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/home/lucascmendes/.yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/home/lucascmendes/.yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1358:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "tibia_book_scrapper",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Lucas C Mendes <lucasmendes.lx@gmail.com>",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

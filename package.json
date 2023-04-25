@@ -1,0 +1,19 @@
+{
+  "name": "tibia_book_scrapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lucas C Mendes <lucasmendes.lx@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.3",
+    "mongodb": "^5.2.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
